@@ -54,8 +54,11 @@ $ git remote add origin git@github.com:User/UserRepo.git
 used to change the url of an existing remote repository:
 $ git remote set-url origin git@github.com:User/UserRepo.git
 
-```
+A power user shortcut command that combines the -a and -m options. This combination immediately creates a commit of all the staged changes and takes an inline commit message.
+$ git commit -am "commit message"
 
+
+```
 
 
 5 What is the difference between a git merge and a git rebase?

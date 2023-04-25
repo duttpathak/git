@@ -39,7 +39,7 @@ git init #initialized empty git repository under user
 
 Make Changes
 $ git add 
-$ git commit #command and commit to the changes made. 
+$ git commit #commit to the changes made. 
 $ git status 
 
 Sync Repositories

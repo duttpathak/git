@@ -92,7 +92,13 @@ Git squash is a way to rewrite your commit history; this action helps to clean u
 
 Git pull will fetch and replay the changes from the remote maain branch since it diverged from the local master until its current commit on top of master and record the result in a new commit along with the names of the two parent commits and a log message from the user describing the changes. 
 
-10  What is the difference between a git pull and a get fetch?
+10  What is the difference between a git pull and a git fetch?
+
+Git pull command downloads the changes directly and then applies those changes to the current working files. The git fetch command does not change or manipulate or spoil the data of the remote repository. 
+
+Git pull pulls all the changes from the remote repository to corresponding branch of the local repository. The git fetch changes from the remote repository and then stores the changes in a separate branch in local repository. 
+
+Git pull updates the current HEAD of teh current branch with the latest changes of the remote branch and the git fetch downloads the new changes from remote server. 
 
 11  How do you remove a file from Git w/o removing it from your filesystem?
 

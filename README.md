@@ -102,4 +102,18 @@ Git pull updates the current HEAD of teh current branch with the latest changes 
 
 11  How do you remove a file from Git w/o removing it from your filesystem?
 
+```
+$ git rm --cached
+
+```
+
 12  What is a merge conflict? How can you resolve it?
+
+When there are two commits, merge conflict is where git is unable to automatically resolve differences in code. Git only merges the changes automatically only if the commits are on different lines or branches. 
+
+```
+The easiest way to resolve a conflicted file is to open it and make any necessary changes
+After editing the file, we can use the git add a command to stage the new merged content
+The final step is to create a new commit with the help of the git commit command
+Git will create a new merge commit to finalize the merge
+```

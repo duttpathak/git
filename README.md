@@ -79,6 +79,11 @@ $ git rebasse --continue #lets git continue with the rebase operation
 
 7 How do you revert a commit that has been pushed and made public?
 
+```
+$ git revert 
+```
+
+
 8 What is Git squash?
 
 9  What are the two steps performed by a git pull?

@@ -116,4 +116,5 @@ The easiest way to resolve a conflicted file is to open it and make any necessar
 After editing the file, we can use the git add a command to stage the new merged content
 The final step is to create a new commit with the help of the git commit command
 Git will create a new merge commit to finalize the merge
+
 ```

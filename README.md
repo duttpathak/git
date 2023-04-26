@@ -71,6 +71,12 @@ Git rebase is similar to git merge, except the featured branches will not be mer
 
 6 What command would you use to fix a broken commit?
 
+```
+$ git commit --amend
+then use 
+$ git rebasse --continue #lets git continue with the rebase operation
+```
+
 7 How do you revert a commit that has been pushed and made public?
 
 8 What is Git squash?

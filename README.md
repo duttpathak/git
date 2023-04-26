@@ -65,7 +65,7 @@ $ git commit -am "commit message"
 
 Git merge and Git rebase commands are used to combine the work of multiple developers in one code. 
 
-To understand git merge, the git branch needs to be understood first. There is a master branch and featured branch. Let's say that you want your code in a new place and not visible on the master branch. You put it in feature branch. On the master branch the commit changes of the feature branch are not there, so git merge is used to see the commited changes of the feature branch on the master branch. 
+To understand git merge, the git branch needs to be understood first. There is a main branch and featured branch. Let's say that you want your code in a new place and not visible on the master branch. You put it in feature branch. On the main branch the commit changes of the feature branch are not there, so git merge is used to see the commited changes of the feature branch on the master branch. 
 
 Git rebase is similar to git merge, except the featured branches will not be merged, but they will be rebased as seprate commits. Git rebase is eaiser to see, because the logs are linear and it's easy to move through the project.   
 
@@ -86,7 +86,11 @@ $ git revert
 
 8 What is Git squash?
 
+Git squash is a way to rewrite your commit history; this action helps to clean up and simplify your commit history before sharing your work with a team. 
+
 9  What are the two steps performed by a git pull?
+
+Git pull will fetch and replay the changes from the remote maain branch since it diverged from the local master until its current commit on top of master and record the result in a new commit along with the names of the two parent commits and a log message from the user describing the changes. 
 
 10  What is the difference between a git pull and a get fetch?
 

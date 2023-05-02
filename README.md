@@ -54,6 +54,8 @@ $ git remote add origin git@github.com:User/UserRepo.git
 used to change the url of an existing remote repository:
 $ git remote set-url origin git@github.com:User/UserRepo.git
 
+#url type
+
 A power user shortcut command that combines the -a and -m options. This combination immediately creates a commit of all the staged changes and takes an inline commit message.
 $ git commit -am "commit message"
 
@@ -65,7 +67,7 @@ $ git commit -am "commit message"
 
 Git merge and Git rebase commands are used to combine the work of multiple developers in one code. 
 
-To understand git merge, the git branch needs to be understood first. There is a main branch and featured branch. Let's say that you want your code in a new place and not visible on the master branch. You put it in feature branch. On the main branch the commit changes of the feature branch are not there, so git merge is used to see the commited changes of the feature branch on the master branch. 
+To understand git merge, the git branch needs to be understood first. There is a main branch and featured branch. Let's say that you want your code in a new place and not visible on the main branch. You put it in feature branch. On the main branch the commit changes of the feature branch are not there, so git merge is used to see the commited changes of the feature branch on the main branch. 
 
 Git rebase is similar to git merge, except the featured branches will not be merged, but they will be rebased as seprate commits. Git rebase is eaiser to see, because the logs are linear and it's easy to move through the project.   
 
@@ -102,19 +104,36 @@ Git pull updates the current HEAD of teh current branch with the latest changes 
 
 11  How do you remove a file from Git w/o removing it from your filesystem?
 
+how to not track on git
+
 ```
 $ git rm --cached
 
 ```
+output 
 
 12  What is a merge conflict? How can you resolve it?
 
 When there are two commits, merge conflict is where git is unable to automatically resolve differences in code. Git only merges the changes automatically only if the commits are on different lines or branches. 
 
 ```
-The easiest way to resolve a conflicted file is to open it and make any necessary changes
-After editing the file, we can use the git add a command to stage the new merged content
-The final step is to create a new commit with the help of the git commit command
+The easiest way to resolve a conflicted file is to open it and make any necessary changes.
+
+After editing the file, we can use the git add a command to stage the new merged content.
+
+The final step is to create a new commit with the help of the git commit command.
+
 Git will create a new merge commit to finalize the merge
 
 ```
+
+cherry pick 
+
+Git distubution system (don't need central server to share code)
+
+origin 
+
+git commit adds changes locally 
+git push publices remotely  
+
+git branches
